@@ -107,22 +107,29 @@
 
 	?>
 	<div class="row">
+		<button id="question1" onclick="chart1()" >Chart-1</button>
      <div class="col-4"><canvas id="myChart1" width="40%" height="10%"></canvas></div>
+		<button id="question1" onclick="chart2()" >Chart-2</button>
      <div class="col-4"><canvas id="myChart2" width="40%" height="10%"></canvas></div>
+		<button id="question1" onclick="chart3()" >Chart-3</button>
      <div class="col-4"><canvas id="myChart3" width="40%" height="10%"></canvas></div>
-    
-
-
 	</div>
 	
 <script>
 	///////////////////////////////////
+	function chart1(){
+var total = <?php echo $val->num_rows; ?>;
+var d21 = <?php echo $val21->num_rows; ?>;
+var d22 = <?php echo $val22->num_rows; ?>;
+var d23 = <?php echo $val23->num_rows; ?>;
+var d24 = <?php echo $val24->num_rows; ?>;
+// console.log(total);
 var ctx = document.getElementById("myChart1");
 var myDoughnutChart = new Chart(ctx, {
     type: 'doughnut',
      data: {
     datasets: [{
-        data: [10, 20, 30,500],
+        data: [(d21*100)/total, (d22*100)/total, (d23*100)/total, (d24*100)/total],
         backgroundColor: [
                 'rgba(255, 99, 132, 2)',
                 'rgba(54, 162, 235, 2)',
@@ -144,14 +151,28 @@ var myDoughnutChart = new Chart(ctx, {
 
     options:Chart.defaults.doughnut
 });
+};
 /////////////////////////////////////
 ///////////////////////////////////
+	function chart2(){
+var total = <?php echo $val->num_rows; ?>;
+var d31 = <?php echo $val31->num_rows; ?>;
+var d32 = <?php echo $val32->num_rows; ?>;
+var d33 = <?php echo $val33->num_rows; ?>;
+var d34 = <?php echo $val34->num_rows; ?>;
+var d35 = <?php echo $val35->num_rows; ?>;
+var d36 = <?php echo $val36->num_rows; ?>;
+var d37 = <?php echo $val37->num_rows; ?>;
+var d38 = <?php echo $val38->num_rows; ?>;
+var d39 = <?php echo $val39->num_rows; ?>;
+var d310 = <?php echo $val310->num_rows; ?>;
+
 var ctx = document.getElementById("myChart2");
 var myDoughnutChart = new Chart(ctx, {
     type: 'doughnut',
      data: {
     datasets: [{
-        data: [10, 20, 30,40,50,60,70,80,90,100],
+        data: [(d31*100)/total, (d32*100)/total, (d33*100)/total, (d34*100)/total, (d35*100)/total, (d36*100)/total, (d37*100)/total, (d38*100)/total, (d39*100)/total, (d310*100)/total],
         backgroundColor: [
                 'rgba(255, 99, 132, 2)',
                 'rgba(54, 162, 235, 2)',
@@ -174,14 +195,21 @@ var myDoughnutChart = new Chart(ctx, {
 
     options:Chart.defaults.doughnut
 });
+};
 /////////////////////////////////////
 ///////////////////////////////////
+	function chart3(){
+var total = <?php echo $val->num_rows; ?>;
+var d41 = <?php echo $val41->num_rows; ?>;
+var d42 = <?php echo $val42->num_rows; ?>;
+var d43 = <?php echo $val43->num_rows; ?>;
+var d44 = <?php echo $val44->num_rows; ?>;
 var ctx = document.getElementById("myChart3");
 var myDoughnutChart = new Chart(ctx, {
     type: 'doughnut',
      data: {
     datasets: [{
-        data: [10, 20, 30,12],
+        data: [(d41*100)/total, (d42*100)/total, (d43*100)/total, (d44*100)/total],
         backgroundColor: [
                 'rgba(255, 99, 132, 2)',
                 'rgba(54, 162, 235, 2)',
@@ -203,6 +231,7 @@ var myDoughnutChart = new Chart(ctx, {
 
     options:Chart.defaults.doughnut
 });
+};
 /////////////////////////////////////
 </script>
 </body>

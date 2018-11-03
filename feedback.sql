@@ -28,7 +28,6 @@ SET time_zone = "+00:00";
 -- Table structure for table `feedback`
 --
 
-DROP TABLE IF EXISTS `feedback`;
 CREATE TABLE IF NOT EXISTS `feedback` (
   `sno` int(11) NOT NULL AUTO_INCREMENT,
   `id` varchar(100) NOT NULL,
