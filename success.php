@@ -7,28 +7,13 @@
       color: black;
       background-color: slategray;
     }
-    .container
-    {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        position: fixed;
-        align-items: center;
-        justify-content: center;
+    
+    .container{
+      margin-top: 300px;
+      margin-left: 300px;
     }
-    .c{
-      color: ;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        position: fixed;
-        align-items: baseline;
-        justify-content: space-between;
-        margin-left: 1em;
-        margin-top: 2em;
-    }
-
-
+    #designer{
+      margin-top: 200px;
     }
   </style>
 
@@ -42,16 +27,15 @@
 <body>
 
 <div class="container">
-  <h2>THANK YOU</h2><br>
-</div>
-<div class="c">
-  <p>
+  <h2>THANK YOU</h2>
+
+<!-- <div class="c"> -->
+  <p id="return-btn">
   <button type="button" class="btn btn-success" onclick="location.href = 'index.php';">Click Here</button>To submit another response </p>
 </div>
-<!-- <div class="container-fluid m">
+<div class="float-right" id="designer">
   <h4>Designed By : HARSH MOHAN</h4>
-</div> -->
-
-
+</div>
+</div>
 </body>
 </html>
