@@ -135,9 +135,10 @@ var myDoughnutChart = new Chart(ctx, {
 
     // These labels appear in the legend and in the tooltips when hovering different arcs
     labels: [
-        'Red',
-        'Yellow',
-        'Blue'
+        'Corruption',
+        'Poverty',
+        'Education',
+        'Law and order'
     ]
 },
 
@@ -167,9 +168,7 @@ var myDoughnutChart = new Chart(ctx, {
 
     // These labels appear in the legend and in the tooltips when hovering different arcs
     labels: [
-        'Red',
-        'Yellow',
-        'Blue'
+        '1','2','3','4','5','6','7','8','9','10'
     ]
 },
 
@@ -195,9 +194,10 @@ var myDoughnutChart = new Chart(ctx, {
 
     // These labels appear in the legend and in the tooltips when hovering different arcs
     labels: [
-        'Red',
-        'Yellow',
-        'Blue'
+        'Russia',
+        'Iran',
+        'United States',
+        'France'
     ]
 },
 
